@@ -12,7 +12,7 @@ const CityWeather = ({city,zip,country})=>{
     .then((response)=>{
         setTemperature(Math.round(response.data.main.temp))
     })
-  }, [])
+  })
 
 
   return(
