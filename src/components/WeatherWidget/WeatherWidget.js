@@ -1,13 +1,11 @@
+import CityWeather from './CityWeather/CityWeather';
 import './WeatherWidget.css';
 
 function WeatherWidget() {
   return (
     <section className="WeatherWidget">
-      <article className='cityWeather'>
-        <h1>Le Moule</h1>
-        <h2>97160</h2>
-        <p>29°C</p>
-      </article>
+      <CityWeather city="Le Moule" zip='97160' />
+      <CityWeather city="Paris" zip="75001" />
     </section>
   );
 }
